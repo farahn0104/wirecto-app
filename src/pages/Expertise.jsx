@@ -253,14 +253,14 @@ const Expertise = () => {
                   </div>
                   
                   <div className="flex space-x-4">
-                    <a
-                      href={product.link}
+                    <Link
+                      to={product.link}
                       target={product.link.startsWith('http') ? '_blank' : '_self'}
                       rel="noopener noreferrer"
                       className="flex-1 bg-gradient-to-r from-primary to-accent text-white py-3 px-6 rounded-lg font-semibold text-center hover:shadow-lg transition-all"
                     >
                       View Details
-                    </a>
+                    </Link>
                     <button className="px-6 py-3 border-2 border-accent text-accent rounded-lg font-semibold hover:bg-accent hover:text-white transition-all">
                       Demo
                     </button>
@@ -284,18 +284,18 @@ const Expertise = () => {
               Share your needs and we'll create the perfect solution for you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <Link
                 href="/contact"
                 className="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold text-lg"
               >
                 Request Custom Solution
-              </a>
-              <a
+              </Link>
+              <Link
                 href="tel:+919716670074"
                 className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-xl font-semibold text-lg"
               >
                 Call: +91 9716670074
-              </a>
+              </Link>
             </div>
           </div>
         </div>

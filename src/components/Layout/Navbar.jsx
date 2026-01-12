@@ -15,8 +15,12 @@ const Navbar = () => {
     { name: 'Who We Are', path: '/about/whoweare' },
     { name: 'Core Value', path: '/about/corevalue' },
     { name: 'Advisory Board', path: '/about/advisory' },
-    { name: 'Team Members', path: '/about/team' },
-    { name: 'Membership', path: '/about/member' },
+    { name: 'Team Members', path: '/about/team-members' },
+    { name: 'Membership', path: '/about/membership' },
+  ]
+  const productList = [
+    { name: 'CRM System', path: '/crm' },
+    { name: 'School ERP', path: '/school-erp' },
   ]
   const solutionsItems = [
     { name: 'Website Design', path: '/solutions/website' },
@@ -98,7 +102,6 @@ const Navbar = () => {
 
   const contactItems = [
     { name: 'Careers', path: '/careers' },
-    { name: 'Contact', path: '/contact' },
     {
       name: 'Our Location',
       children: [
@@ -284,6 +287,7 @@ const Navbar = () => {
             {renderDesktopDropdown('Expertise', expertiseItems)}
             {renderDesktopDropdown('Industries', industriesItems)}
             {renderDesktopDropdown('Technology', technologyItems)}
+            {renderDesktopDropdown('Products', productList)}
             {renderDesktopDropdown('Partners', partnersItems)}
             {renderDesktopDropdown('Contact Us', contactItems)}
             {renderDesktopDropdown('Login', loginItems)}

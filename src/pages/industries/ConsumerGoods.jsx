@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 const ConsumerGoods = () => {
   return (
@@ -118,12 +119,12 @@ const ConsumerGoods = () => {
             <p className="text-gray-600 text-lg mb-8 max-w-3xl mx-auto">
               Looking to grow your consumer goods business? Let Wirecto help you enhance efficiency and drive success. Contact us today and discover how our tailored solutions can help you enhance operations, improve customer experiences, and drive growth in an increasingly competitive marketplace.
             </p>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-block bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-xl text-lg font-semibold hover:shadow-lg transition-all"
             >
               Contact Us Now
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom'
 const ITOutsourcing = () => {
   return (
     <div>
@@ -29,9 +29,9 @@ const ITOutsourcing = () => {
               </p>
             </div>
             <div className="rounded-3xl overflow-hidden shadow-2xl">
-              <img 
-                src="/img/service-4.jpg" 
-                alt="IT Outsourcing Services" 
+              <img
+                src="/img/service-4.jpg"
+                alt="IT Outsourcing Services"
                 className="w-full h-96 object-cover"
               />
             </div>
@@ -54,7 +54,7 @@ const ITOutsourcing = () => {
             <p className="text-gray-600 text-lg mb-8">
               Outsourcing IT functions can provide numerous benefits to businesses of all sizes. Here are some reasons why IT outsourcing is a smart choice:
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
@@ -131,7 +131,7 @@ const ITOutsourcing = () => {
           {/* Why Choose Wirecto */}
           <div className="mb-16 bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl p-8">
             <h2 className="text-4xl font-bold text-gray-800 mb-8">Why Choose Wirecto for IT Outsourcing?</h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
@@ -174,12 +174,12 @@ const ITOutsourcing = () => {
             <p className="text-lg opacity-90 mb-8 max-w-3xl mx-auto">
               Outsourcing your IT functions to Wirecto means partnering with a trusted service provider that is committed to delivering high-quality, cost-effective solutions. We collaborate with you to gain a deep understanding of your objectives, providing adaptable and scalable IT outsourcing solutions tailored to meet your specific needs.
             </p>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-block bg-white text-primary px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Contact Us Today
-            </a>
+            </Link>
           </div>
         </div>
       </section>

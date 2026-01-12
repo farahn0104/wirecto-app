@@ -1,6 +1,6 @@
 // src/App.jsx
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import HomePage from './pages/HomePage';
 import About from './pages/About';
@@ -108,6 +108,10 @@ import Singapore from './pages/location/Singapore';
 import Qatar from './pages/location/Qatar';
 import UAE from './pages/location/UAE';
 import Dubai from './pages/location/Dubai';
+import LegalTeam from './pages/about/LegalTeam';
+import ExpertMembers from './pages/about/ExpertMembers';
+import CRMSystem from './pages/products/CRMSystem';
+import SchoolERP from './pages/products/SchoolERP';
 
 
 
@@ -141,8 +145,8 @@ function App() {
           <Route path="/about/whoweare" element={<WhoWeAre />} />
           <Route path="/about/corevalue" element={<CoreValue />} />
           <Route path="/about/advisory" element={<AdvisoryBoard />} />
-          <Route path="/about/team" element={<TeamMembers />} />
-          <Route path="/about/member" element={<Membership />} />
+          <Route path="/about/team-members" element={<TeamMembers />} />
+          <Route path="/about/membership" element={<Membership />} />
 
           {/* Solutions Routes */}
           <Route path="/solutions" element={<Solutions />} />
@@ -210,13 +214,17 @@ function App() {
           <Route path="/technology/angular" element={<Angular />} />
           <Route path="/technology/node" element={<NodeJS />} />
           <Route path="/technology/react" element={<ReactJS />} />
-          <Route path="/technolo  gy/flutter" element={<Flutter />} />
+          <Route path="/technology/flutter" element={<Flutter />} />
           <Route path="/technology/javascript" element={<JavaScript />} />
           <Route path="/technology/blockchain" element={<Blockchain />} />
           <Route path="/technology/microsoft" element={<Microsoft />} />
           <Route path="/technology/aws" element={<AWS />} />
           <Route path="/technology/google-cloud" element={<GoogleCloud />} />
           <Route path="/technology/azure" element={<Azure />} />
+
+          {/* Technology Routes */}
+          <Route path="/products/crm" element={<CRMSystem />} />
+          <Route path="/products/school-erp" element={<SchoolERP />} />
 
           {/* Partners Routes */}
           <Route path="/partners" element={<Partners />} />
@@ -253,9 +261,9 @@ function App() {
               <div className="text-center">
                 <h1 className="text-6xl font-bold text-gray-800 mb-6">404</h1>
                 <p className="text-xl text-gray-600 mb-8">Page not found</p>
-                <a href="/" className="text-accent hover:text-primary font-semibold">
+                <Link to="/" className="text-accent hover:text-primary font-semibold">
                   Return to Home
-                </a>
+                </Link>
               </div>
             </div>
           } />

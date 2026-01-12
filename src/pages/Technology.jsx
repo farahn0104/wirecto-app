@@ -394,18 +394,18 @@ const Technology = () => {
               based on your requirements, budget, and scalability needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold text-lg"
               >
                 Get Technology Consultation
-              </a>
-              <a
-                href="/solutions"
+              </Link>
+              <Link
+                to="/solutions"
                 className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-xl font-semibold text-lg"
               >
                 View Our Solutions
-              </a>
+              </Link>
             </div>
           </div>
         </div>

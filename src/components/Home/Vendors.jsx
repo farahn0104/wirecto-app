@@ -13,9 +13,9 @@ const vendors = [
 
 const Vendors = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-gray-900 to-gray-800">
+    <section className="py-5 bg-gradient-to-r from-gray-900 to-gray-800">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-4">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Trusted by Industry Leaders
           </h2>
@@ -35,7 +35,6 @@ const Vendors = () => {
             1024: { slidesPerView: 6 }
           }}
           loop={true}
-          className="pb-8"
         >
           {vendors.map((vendor, index) => (
             <SwiperSlide key={index}>
@@ -53,7 +52,7 @@ const Vendors = () => {
           ))}
         </Swiper>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-4">
           <div className="inline-flex items-center space-x-6">
             <div className="flex items-center text-white">
               <div className="w-3 h-3 bg-green-500 rounded-full mr-2 animate-pulse"></div>

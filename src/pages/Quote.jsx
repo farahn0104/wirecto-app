@@ -287,13 +287,13 @@ const Quote = () => {
                     />
                     <label className="ml-2 text-gray-700">
                       I agree to the{' '}
-                      <a href="/terms" className="text-accent hover:text-primary">
+                      <Link to="/terms" className="text-accent hover:text-primary">
                         Terms of Service
-                      </a>{' '}
+                      </Link>{' '}
                       and{' '}
-                      <a href="/privacy" className="text-accent hover:text-primary">
+                      <Link href="/privacy" className="text-accent hover:text-primary">
                         Privacy Policy
-                      </a>
+                      </Link>
                     </label>
                   </div>
 

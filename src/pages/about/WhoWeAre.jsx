@@ -1,5 +1,6 @@
 // src/pages/about/WhoWeAre.jsx
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 const WhoWeAre = () => {
   return (
@@ -114,12 +115,12 @@ const WhoWeAre = () => {
               </div>
 
               <div className="text-center">
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="inline-block bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-xl text-lg font-semibold hover:shadow-lg transition-all"
                 >
                   Partner With Us
-                </a>
+                </Link>
               </div>
             </div>
           </div>

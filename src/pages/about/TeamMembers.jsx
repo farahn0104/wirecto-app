@@ -1,10 +1,12 @@
 // src/pages/about/TeamMembers.jsx
 import React, { useState } from 'react';
-import { 
+import {
   FaLinkedin, FaTwitter, FaGithub, FaEnvelope,
   FaCode, FaPaintBrush, FaCloud, FaMobileAlt,
   FaChartLine, FaShieldAlt, FaServer, FaUsers
 } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import Team from '../../components/Home/Team';
 
 const TeamMembers = () => {
   const [selectedDepartment, setSelectedDepartment] = useState('all');
@@ -23,21 +25,21 @@ const TeamMembers = () => {
   const teamMembers = [
     {
       id: 1,
-      name: 'Amit Sharma',
-      role: 'Lead Software Engineer',
+      name: 'Farhan Ansari',
+      role: 'Full Stack Developer',
       department: 'development',
-      experience: '8 years',
-      expertise: ['React', 'Node.js', 'TypeScript'],
+      experience: '1 years',
+      expertise: ['React', 'Node.js'],
       bio: 'Specializes in building scalable web applications.',
       icon: <FaCode />
     },
     {
       id: 2,
-      name: 'Priya Patel',
-      role: 'Senior UX Designer',
-      department: 'design',
-      experience: '6 years',
-      expertise: ['Figma', 'Adobe XD', 'User Research'],
+      name: 'Faisal Khan',
+      role: 'Frontend Developer',
+      department: 'development',
+      experience: '1 years',
+      expertise: ['Next.js', 'JavaScript'],
       bio: 'Creates intuitive user experiences for complex applications.',
       icon: <FaPaintBrush />
     },
@@ -143,27 +145,30 @@ const TeamMembers = () => {
     }
   ];
 
-  const filteredMembers = selectedDepartment === 'all' 
-    ? teamMembers 
+  const filteredMembers = selectedDepartment === 'all'
+    ? teamMembers
     : teamMembers.filter(member => member.department === selectedDepartment);
 
   return (
     <div>
+
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-primary to-accent">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center text-white max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">Our Team</h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6">Team Members</h1>
             <p className="text-xl opacity-90">
               150+ experts dedicated to delivering exceptional technology solutions
             </p>
           </div>
         </div>
+
       </section>
+      <Team />
 
       {/* Team Stats */}
-      <section className="py-12 bg-white">
+      <section className="border py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -189,11 +194,10 @@ const TeamMembers = () => {
               <button
                 key={dept.id}
                 onClick={() => setSelectedDepartment(dept.id)}
-                className={`px-6 py-3 rounded-full font-semibold transition-all ${
-                  selectedDepartment === dept.id
-                    ? 'bg-accent text-white'
-                    : 'bg-white text-gray-700 hover:bg-gray-100'
-                }`}
+                className={`px-6 py-3 rounded-full font-semibold transition-all ${selectedDepartment === dept.id
+                  ? 'bg-accent text-white'
+                  : 'bg-white text-gray-700 hover:bg-gray-100'
+                  }`}
               >
                 {dept.name}
                 {dept.count > 0 && (
@@ -204,6 +208,17 @@ const TeamMembers = () => {
           </div>
         </div>
       </section>
+
+      <div className="pt-5">
+        <div className="text-center ">
+          <h5 className="text-accent font-semibold uppercase tracking-wider mb-4">
+            Expert Team
+          </h5>
+          <h2 className=" text-4xl md:text-5xl font-bold text-gray-800">
+            Some Of Our hardworking employees of our company.
+          </h2>
+        </div>
+      </div>
 
       {/* Team Grid */}
       <section className="py-20">
@@ -253,18 +268,18 @@ const TeamMembers = () => {
                   </div>
 
                   <div className="flex space-x-4 pt-6 border-t border-gray-100">
-                    <button className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center text-gray-600 hover:bg-gray-200 transition-colors">
+                    <Link to={'https://www.linkedin.com/in/farhan-ansari-bb8947182//'} target='_blank' className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center text-gray-600 hover:bg-gray-200 transition-colors">
                       <FaLinkedin />
-                    </button>
-                    <button className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center text-gray-600 hover:bg-gray-200 transition-colors">
+                    </Link>
+                    <Link to={'/'} target='_blank' className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center text-gray-600 hover:bg-gray-200 transition-colors">
                       <FaTwitter />
-                    </button>
-                    <button className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center text-gray-600 hover:bg-gray-200 transition-colors">
+                    </Link>
+                    <Link to={'https://github.com/farahn0104'} target='_blank' className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center text-gray-600 hover:bg-gray-200 transition-colors">
                       <FaGithub />
-                    </button>
-                    <button className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center text-gray-600 hover:bg-gray-200 transition-colors">
+                    </Link>
+                    <Link to={'mdfarhankic85@gmail.com'} target='_blank' className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center text-gray-600 hover:bg-gray-200 transition-colors">
                       <FaEnvelope />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -313,12 +328,12 @@ const TeamMembers = () => {
             <p className="text-xl text-gray-600 mb-8">
               We're always looking for talented individuals to join our growing team.
             </p>
-            <a
-              href="/careers"
+            <Link
+              to="/careers"
               className="inline-block bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-xl text-lg font-semibold hover:shadow-lg transition-all"
             >
               View Open Positions
-            </a>
+            </Link>
           </div>
         </div>
       </section>

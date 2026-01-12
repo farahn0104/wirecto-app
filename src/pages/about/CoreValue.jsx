@@ -4,6 +4,7 @@ import {
   FaUsers, FaLightbulb, FaHandshake, FaAward, 
   FaShieldAlt, FaRocket, FaHeart, FaBalanceScale 
 } from 'react-icons/fa';
+import { Link } from 'react-router-dom'
 
 const CoreValue = () => {
   const values = [
@@ -269,12 +270,12 @@ const CoreValue = () => {
               <p className="text-xl opacity-90 mb-8">
                 Experience the difference that strong values make in technology solutions.
               </p>
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-block bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-xl text-lg font-semibold transition-all"
               >
                 Start Your Journey
-              </a>
+              </Link>
             </div>
           </div>
         </div>

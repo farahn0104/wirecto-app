@@ -1,7 +1,7 @@
 // src/pages/Download.jsx
 import React, { useState } from 'react';
 import { FaDownload, FaWindows, FaApple, FaLinux, FaAndroid, FaMobileAlt, FaDesktop, FaCloudDownloadAlt } from 'react-icons/fa';
-
+import { Link } from 'react-router-dom'
 const Download = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
@@ -146,11 +146,10 @@ const Download = () => {
               <button
                 key={category.id}
                 onClick={() => setSelectedCategory(category.id)}
-                className={`px-6 py-3 rounded-full font-semibold transition-all ${
-                  selectedCategory === category.id
-                    ? 'bg-accent text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
+                className={`px-6 py-3 rounded-full font-semibold transition-all ${selectedCategory === category.id
+                  ? 'bg-accent text-white'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
               >
                 {category.name}
                 <span className="ml-2 text-sm opacity-75">({category.count})</span>
@@ -201,14 +200,14 @@ const Download = () => {
                       <FaCloudDownloadAlt className="mr-2" />
                       <span className="text-sm">Last updated: 2 days ago</span>
                     </div>
-                    <a
-                      href={download.downloadUrl}
+                    <Link
+                      to={download.downloadUrl}
                       download
                       className="flex items-center bg-gradient-to-r from-primary to-accent text-white py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-all"
                     >
                       <FaDownload className="mr-2" />
                       Download
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

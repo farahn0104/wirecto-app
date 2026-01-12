@@ -325,12 +325,12 @@ const Industries = () => {
                   <p className="text-gray-600 mb-6">
                     Looking for a custom solution for your industry? Contact us for a free consultation.
                   </p>
-                  <a
-                    href="/contact"
+                  <Link
+                    to="/contact"
                     className="inline-block bg-gradient-to-r from-primary to-accent text-white py-3 px-8 rounded-lg font-semibold hover:shadow-lg transition-all"
                   >
                     Request Consultation
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -378,12 +378,12 @@ const Industries = () => {
                 <p className="text-gray-600 mb-6">
                   {caseStudy.description}
                 </p>
-                <a
-                  href="/case-studies"
+                <Link
+                  to="/case-studies"
                   className="text-accent hover:text-primary font-semibold"
                 >
                   Read Case Study →
-                </a>
+                </Link>
               </div>
             ))}
           </div>

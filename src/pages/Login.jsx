@@ -70,9 +70,9 @@ const Login = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {loginForms.map((form) => (
-                <a
+                <Link
                   key={form.id}
-                  href={form.link}
+                  to={form.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-100 hover:border-accent/20"
@@ -93,7 +93,7 @@ const Login = () => {
                   <div className="text-accent hover:text-primary font-semibold">
                     Login →
                   </div>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -174,9 +174,9 @@ const Login = () => {
                         />
                         <span className="ml-2 text-gray-700">Remember me</span>
                       </label>
-                      <a href="/forgot-password" className="text-accent hover:text-primary font-semibold">
+                      <Link href="/forgot-password" className="text-accent hover:text-primary font-semibold">
                         Forgot password?
-                      </a>
+                      </Link>
                     </div>
 
                     <button
@@ -282,13 +282,13 @@ const Login = () => {
                         />
                         <span className="ml-2 text-gray-700">
                           I agree to the{' '}
-                          <a href="/terms" className="text-accent hover:text-primary">
+                          <Link href="/terms" className="text-accent hover:text-primary">
                             Terms of Service
-                          </a>{' '}
+                          </Link>{' '}
                           and{' '}
-                          <a href="/privacy" className="text-accent hover:text-primary">
+                          <Link href="/privacy" className="text-accent hover:text-primary">
                             Privacy Policy
-                          </a>
+                          </Link>
                         </span>
                       </label>
                     </div>

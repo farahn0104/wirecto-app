@@ -134,7 +134,7 @@ const Services = () => {
     ];
 
     return (
-        <section className="py-20 bg-gray-50" data-aos="fade-up">
+        <section className="py-10 bg-gray-50" data-aos="fade-up">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <h5 className="text-accent font-semibold uppercase tracking-wider mb-4">

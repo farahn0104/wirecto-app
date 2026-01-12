@@ -40,7 +40,7 @@ const About = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-primary to-accent">
+      {/*      <section className="relative py-20 bg-gradient-to-r from-primary to-accent">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center text-white max-w-4xl mx-auto">
@@ -58,25 +58,26 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Company Overview */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+        <div className="container mx-auto px-4 ">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"> */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+            <div className="flex flex-col justify-center h-full">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
                 11+ Years of Excellence in Technology
               </h2>
               <p className="text-gray-600 text-lg mb-6">
-                Founded in 2012, Wirecto Technologies has grown from a small startup to a 
-                leading technology solutions provider serving clients across the globe. Our 
-                journey has been marked by continuous innovation, customer satisfaction, 
+                Founded in 2012, Wirecto Technologies has grown from a small startup to a
+                leading technology solutions provider serving clients across the globe. Our
+                journey has been marked by continuous innovation, customer satisfaction,
                 and technological excellence.
               </p>
               <p className="text-gray-600 text-lg mb-8">
-                With a team of 150+ experts across multiple countries, we've successfully 
-                delivered 1250+ projects for 2534+ happy clients. Our commitment to quality 
+                With a team of 150+ experts across multiple countries, we've successfully
+                delivered 1250+ projects for 2534+ happy clients. Our commitment to quality
                 and innovation has earned us 110+ industry awards and recognitions.
               </p>
               <div className="grid grid-cols-2 gap-6">
@@ -90,11 +91,13 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="relative">
-              <img 
-                src="/img/about.jpg" 
-                alt="Wirecto Office" 
-                className="rounded-3xl shadow-2xl"
+            {/* <div className="relative"> */}
+            <div className="relative h-[320px] md:h-[380px] lg:h-[420px]">
+              <img
+                src="/img/about.jpg"
+                alt="Wirecto Office"
+                // className="rounded-3xl shadow-2xl"
+                className="w-full h-full object-cover rounded-3xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-accent rounded-3xl -z-10"></div>
               <div className="absolute -top-6 -right-6 w-24 h-24 bg-primary rounded-3xl -z-10"></div>
@@ -104,7 +107,7 @@ const About = () => {
       </section>
 
       {/* Core Values */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
@@ -114,10 +117,10 @@ const About = () => {
               These principles guide everything we do and form the foundation of our success
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {values.map((value, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-white rounded-2xl p-6 text-center hover:shadow-xl transition-shadow"
                 data-aos="fade-up"
@@ -135,7 +138,7 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20">
+      <section className="py-10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="bg-gradient-to-br from-primary to-accent rounded-3xl p-8 text-white">
@@ -146,12 +149,12 @@ const About = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
               <p className="opacity-90">
-                To empower businesses with innovative, scalable, and reliable technology 
-                solutions that drive growth, efficiency, and competitive advantage in the 
+                To empower businesses with innovative, scalable, and reliable technology
+                solutions that drive growth, efficiency, and competitive advantage in the
                 digital era.
               </p>
             </div>
-            
+
             <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 text-white">
               <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-6">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -161,8 +164,8 @@ const About = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
               <p className="opacity-90">
-                To be the most trusted global technology partner, recognized for 
-                transforming businesses through cutting-edge solutions and exceptional 
+                To be the most trusted global technology partner, recognized for
+                transforming businesses through cutting-edge solutions and exceptional
                 customer experiences.
               </p>
             </div>

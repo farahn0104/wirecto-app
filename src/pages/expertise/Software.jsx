@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 const Software = () => {
     return (
@@ -197,18 +198,18 @@ const Software = () => {
                             Leverage our software expertise to build robust, scalable, and innovative solutions that drive business growth and transformation.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a
-                                href="/contact"
+                            <Link
+                                to="/contact"
                                 className="inline-block bg-white text-primary px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-100 transition-colors"
                             >
                                 Start Your Project
-                            </a>
-                            <a
-                                href="/contact"
+                            </Link>
+                            <Link
+                                to="/contact"
                                 className="inline-block border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/10 transition-colors"
                             >
                                 Consultation Call
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

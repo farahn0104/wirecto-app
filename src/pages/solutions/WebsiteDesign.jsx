@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const WebsiteDesign = () => {
   return (
@@ -29,9 +30,9 @@ const WebsiteDesign = () => {
               </p>
             </div>
             <div className="rounded-3xl overflow-hidden shadow-2xl">
-              <img 
-                src="/img/service-1.jpg" 
-                alt="Website Design Services" 
+              <img
+                src="/img/service-1.jpg"
+                alt="Website Design Services"
                 className="w-full h-96 object-cover"
               />
             </div>
@@ -40,7 +41,7 @@ const WebsiteDesign = () => {
           {/* Why Choose Wirecto */}
           <div className="mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-8">Why Choose Wirecto for Your Website Design?</h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
@@ -81,7 +82,7 @@ const WebsiteDesign = () => {
           {/* Website Design Process */}
           <div className="mb-16 bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl p-8">
             <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center">Website Design Process</h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 {
@@ -130,12 +131,12 @@ const WebsiteDesign = () => {
             <p className="text-gray-600 text-lg mb-8 max-w-3xl mx-auto">
               Ready to take your business online with a professional website that drives results? Contact Wirecto today for a consultation, and let's create a website that not only impresses your visitors but also boosts your business growth!
             </p>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-block bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-xl text-lg font-semibold hover:shadow-lg transition-all"
             >
               Start Your Project
-            </a>
+            </Link>
           </div>
         </div>
       </section>

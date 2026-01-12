@@ -273,7 +273,7 @@ const Careers = () => {
                       
                       <div className="mb-6">
                         <h4 className="font-semibold text-gray-700 mb-3">Requirements:</h4>
-                        <ul className="space-y-2">
+                        <ul className=" space-y-2">
                           {job.requirements.map((req, index) => (
                             <li key={index} className="flex items-center">
                               <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
@@ -343,9 +343,9 @@ const Careers = () => {
                   </div>
                   <div>
                     <select className="w-full px-6 py-4 bg-white/10 border border-white/20 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-white">
-                      <option value="">Select Position</option>
+                      <option value="" className=''>Select Position</option>
                       {jobOpenings.map(job => (
-                        <option key={job.id} value={job.id}>{job.title}</option>
+                        <option className='text-black '  key={job.id} value={job.id}>{job.title}</option>
                       ))}
                     </select>
                   </div>

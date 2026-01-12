@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 const Hospital = () => {
     return (
@@ -102,12 +103,12 @@ const Hospital = () => {
                         <p className="text-lg opacity-90 mb-8 max-w-3xl mx-auto">
                             Together, let's make healthcare smarter, faster, and better! Contact us today for a demo or consultation!
                         </p>
-                        <a
-                            href="/contact"
+                        <Link
+                            to="/contact"
                             className="inline-block bg-white text-primary px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-100 transition-colors"
                         >
                             Get a Free Demo
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>

@@ -1,6 +1,7 @@
 // src/components/Home/Team.jsx
 import React from 'react';
 import { FaTwitter, FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { Link } from 'react-router-dom'
 
 const teamMembers = [
   {
@@ -47,7 +48,7 @@ const Team = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h5 className="text-accent font-semibold uppercase tracking-wider mb-4">
-            Expert Members
+            Expert Team
           </h5>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
             Professional Stuffs Ready to Help Your Business
@@ -71,38 +72,38 @@ const Team = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
-                  <a 
-                    href={member.social.twitter} 
+                  <Link 
+                    to={member.social.twitter} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-800 hover:bg-accent hover:text-white transition-colors"
                   >
                     <FaTwitter />
-                  </a>
-                  <a 
-                    href={member.social.facebook} 
+                  </Link>
+                  <Link 
+                    to={member.social.facebook} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-800 hover:bg-accent hover:text-white transition-colors"
                   >
                     <FaFacebookF />
-                  </a>
-                  <a 
-                    href={member.social.instagram} 
+                  </Link>
+                  <Link 
+                    to={member.social.instagram} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-800 hover:bg-accent hover:text-white transition-colors"
                   >
                     <FaInstagram />
-                  </a>
-                  <a 
-                    href={member.social.linkedin} 
+                  </Link>
+                  <Link 
+                    to={member.social.linkedin} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-800 hover:bg-accent hover:text-white transition-colors"
                   >
                     <FaLinkedinIn />
-                  </a>
+                  </Link>
                 </div>
               </div>
               
@@ -117,6 +118,7 @@ const Team = () => {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

@@ -93,8 +93,8 @@ const Blog = () => {
                   {post.excerpt}
                 </p>
                 
-                <a 
-                  href={post.link}
+                <Link 
+                  to={post.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-accent hover:text-primary font-semibold group"
@@ -108,7 +108,7 @@ const Blog = () => {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </article>
           ))}

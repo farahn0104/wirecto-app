@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MediaEntertainment = () => {
   return (
@@ -141,18 +142,18 @@ const MediaEntertainment = () => {
               Ready to embark on an exceptional entertainment journey? Explore the world of media like never before with Wirecto. Whether you're here to relax, discover, or connect, our platform offers everything you need.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-block bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-xl text-lg font-semibold hover:shadow-lg transition-all"
               >
                 Get Started
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 className="inline-block border-2 border-primary text-primary px-8 py-4 rounded-xl text-lg font-semibold hover:bg-primary hover:text-white transition-all"
               >
                 Subscribe to Newsletter
-              </a>
+              </Link>
             </div>
           </div>
         </div>
