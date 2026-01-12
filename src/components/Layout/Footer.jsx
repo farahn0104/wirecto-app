@@ -40,7 +40,7 @@ const Footer = () => {
           <div className="grid  grid-cols-1 lg:grid-cols-12 gap-8">
 
             {/* Logo & About */}
-            <div className="lg:col-span-4 border">
+            <div className="lg:col-span-4 ">
               {/* <div className="bg-gradient-to-br from-primary/20 to-accent/20 backdrop-blur-sm rounded-2xl p-8 h-full"> */}
               <div className="flex flex-col justify-center items-center bg-gradient-to-tr from-primary via-accent to-primary rounded-2xl p-8 h-full">
                 <Link to="/" className="inline-block mb-6">
@@ -61,7 +61,7 @@ const Footer = () => {
             </div>
 
             {/* Contact Info */}
-            <div className=" lg:col-span-3 border">
+            <div className=" lg:col-span-3">
               <h3 className="text-2xl font-bold mb-8 text-white">Get In Touch</h3>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -101,7 +101,7 @@ const Footer = () => {
             </div>
 
             {/* Quick Links */}
-            <div className="lg:col-span-2 border">
+            <div className="lg:col-span-2">
               <h3 className="text-2xl font-bold mb-8 text-white">Quick Links</h3>
               <ul className="space-y-3">
                 {quickLinks.map((link, index) => (
@@ -135,49 +135,6 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-
-
-            <div className='ml-auto flex flex-col items-end'>
-              {/* Social Media Account */}
-              <div className=" w-fu flex space-x-4 pt-4">
-                <Link to="https://x.com/WirectoTech" target="_blank" rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 hover:bg-accent rounded-full flex items-center justify-center transition-colors">
-                  <FaTwitter />
-                </Link>
-                <Link to="https://www.facebook.com/wirecto" target="_blank" rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 hover:bg-accent rounded-full flex items-center justify-center transition-colors">
-                  <FaFacebookF />
-                </Link>
-                <Link to="https://www.linkedin.com/company/wirecto-technologies/" target="_blank" rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 hover:bg-accent rounded-full flex items-center justify-center transition-colors">
-                  <FaLinkedinIn />
-                </Link>
-                <Link to="#" target="_blank" rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 hover:bg-accent rounded-full flex items-center justify-center transition-colors">
-                  <FaInstagram />
-                </Link>
-                <Link to="https://youtube.com/@wirecto" target="_blank" rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 hover:bg-accent rounded-full flex items-center justify-center transition-colors">
-                  <FaYoutube />
-                </Link>
-              </div>
-
-              {/* Input Email */}
-              <div className="bg-gray-800 rounded-xl p-4">
-                <div className="flex">
-                  <input
-                    type="email"
-                    placeholder="Your Email Address"
-                    className="flex-1 bg-transparent border-none outline-none text-white placeholder-gray-400 px-3"
-                  />
-                  <button className="bg-accent hover:bg-primary text-white px-6 py-2 rounded-lg font-semibold transition-colors">
-                    Subscribe
-                  </button>
-                </div>
-                {/* <p className="text-sm text-gray-400 mt-2">Subscribe to our newsletter</p> */}
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
